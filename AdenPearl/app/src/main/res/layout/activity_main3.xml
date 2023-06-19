@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Hizmetlerimiz"
+        android:layout_width="190dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/literata_bold"
+        android:text="Hizmetlerimiz"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="410dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hizmetlerimiz"
+        app:srcCompat="@drawable/arackira" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="391dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/literata"
+        android:text="Transfer hizmetlerimizi Aden Peral ailesi olarak size en uygun fiyatlarla sunuyoruz. Transfer hizmetlerimizden faydalanabilmek için uygulamımız üzerinden bizlere ulaşabilirsiniz."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/buttonRez1"
+        android:layout_width="273dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#2550BE"
+        android:onClick="arabaCagirGecis"
+        android:text="Rezervasyon"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.838" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="273dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="104dp"
+        android:backgroundTint="#2550BE"
+        android:text="Rezervasyon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="273dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#2550BE"
+        android:text="Rezervasyon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="411dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/tatilhizmeti" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="361dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/literata"
+        android:text="Yalnız veya ailenizle birlikte unutamayacağınız bir tatil geçirmek istiyorsanız hemen rezervasyonunuzu yaptırın."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="413dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/gelinarabasikira" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="365dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/literata"
+        android:text="En mutlu gününüzü, konforlu araçlarımızdan aldığınız hizmetle unutulmaz yapın."
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

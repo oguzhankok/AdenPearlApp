@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/adenpearlyenii"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/sifre"
+        android:layout_width="375dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailAdress" />
+
+    <EditText
+        android:id="@+id/EmailAdress"
+        android:layout_width="375dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="E-Mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hosgeldin" />
+
+    <TextView
+        android:id="@+id/Hosgeldin"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#2550BE"
+        android:fontFamily="@font/literata_bold"
+        android:text="Hoşgeldiniz"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Hesabınyokmu"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/literata"
+        android:text="Hesabınız yok mu?"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GirisButonu" />
+
+    <Button
+        android:id="@+id/GirisButonu"
+        android:layout_width="138dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#858585"
+        android:onClick="GirisYap"
+        android:text="Giriş"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifre" />
+
+    <Button
+        android:id="@+id/KayıtButonu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#2550BE"
+        android:onClick="KayitEkraniGecis"
+        android:text="Kaydol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hesabınyokmu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

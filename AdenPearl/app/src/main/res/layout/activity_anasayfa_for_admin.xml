@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buton_yardim_cagrilari"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#2550BE"
+        android:onClick="yardim_cagrilari"
+        android:text="Yardım Çağrıları"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailadresi" />
+
+    <Button
+        android:id="@+id/buton_yardim_cagrilari2"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2550BE"
+        android:onClick="arac_cagrilari"
+        android:text="Araç Çağrıları"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buton_yardim_cagrilari" />
+
+    <Button
+        android:id="@+id/buton_yardim_cagrilari3"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2550BE"
+        android:onClick="kullanicilar"
+        android:text="Kullanıcılar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buton_yardim_cagrilari2" />
+
+    <Button
+        android:id="@+id/buton_yardim_cagrilari4"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2550BE"
+        android:onClick="tur_rezervasyonlari"
+        android:text="Tur Rezervasyonları"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buton_yardim_cagrilari3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/anasayfaa" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="153dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="15dp"
+        android:background="#2550BE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+    <TextView
+        android:id="@+id/kullaniciAdii"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="15dp"
+        android:background="#2550BE"
+        android:gravity="center"
+        android:text="Oğuzhan KÖK"
+        android:textColor="#FBFBFB"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/emailadresi"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:background="#2550BE"
+        android:gravity="center"
+        android:text="admin"
+        android:textColor="#FBFBFB"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/telno" />
+
+    <TextView
+        android:id="@+id/telno"
+        android:layout_width="0dp"
+        android:layout_height="73dp"
+        android:background="#2550BE"
+        android:gravity="center"
+        android:text="ouzhankk@hotmail.com"
+        android:textColor="#FBFBFB"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciAdii" />
+</androidx.constraintlayout.widget.ConstraintLayout>

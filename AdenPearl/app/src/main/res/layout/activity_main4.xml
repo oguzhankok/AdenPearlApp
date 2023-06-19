@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/rez_isim"
+        android:layout_width="356dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Lokasyon :"
+        android:background="@drawable/edittext_background"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDestination"
+        android:layout_width="359dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Varış noktası :"
+        android:inputType="textPersonName"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rez_isim" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="182dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="336dp"
+        android:background="@drawable/edittext_background"
+        android:text="TextView"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDestination" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="182dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="336dp"
+        android:background="@drawable/edittext_background"
+        android:text="TextView"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/etDestination" />
+
+    <Button
+        android:id="@+id/buttonGecis"
+        android:layout_width="356dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#131313"
+        android:text="Araç seç"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/yolcuSayisi"
+        android:layout_width="170dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDestination" />
+
+    <Spinner
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+        android:id="@+id/valizSayisi"
+        android:layout_width="170dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="62dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="12dp"
+        android:text="Yolcu :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDestination" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="62dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        android:text="Valiz :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yolcuSayisi" />
+
+    <EditText
+        android:id="@+id/editText_Date"
+        android:layout_width="183dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Tarih :"
+        android:background="@drawable/edittext_background"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valizSayisi" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="183dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Saat :"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/editText_Date"
+        app:layout_constraintTop_toBottomOf="@+id/valizSayisi" />
+
+    <TextView
+        android:id="@+id/YolcuSayisitxt"
+        android:layout_width="62dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="224dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/etDestination" />
+
+    <TextView
+        android:id="@+id/ValizSayisitxt"
+        android:layout_width="62dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/yolcuSayisi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

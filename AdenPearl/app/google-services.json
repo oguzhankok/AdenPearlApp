@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "389203789050",
+    "project_id": "adenpearl-45f0d",
+    "storage_bucket": "adenpearl-45f0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389203789050:android:a496156867bd29ccc67543",
+        "android_client_info": {
+          "package_name": "com.oguzhan.adenpearl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389203789050-dg8io76338anhujj98qmk7olu9to36j2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUNZGyShdzTsK7dRYqEJXCCixdd9nLjMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389203789050-dg8io76338anhujj98qmk7olu9to36j2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

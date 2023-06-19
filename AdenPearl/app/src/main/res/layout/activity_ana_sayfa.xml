@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="84dp"
+        android:background="#2550BE"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="78dp"
+        android:layout_height="28dp"
+        android:gravity="center"
+        android:text="Turlar"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/turlar_gorsel" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="78dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="36dp"
+        android:gravity="center"
+        android:text="Araç"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="78dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="36dp"
+        android:gravity="center"
+        android:text="Yardım"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:srcCompat="@drawable/anasayfaa" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="153dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:background="#2550BE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+    <TextView
+        android:id="@+id/kullaniciAdii"
+        android:layout_width="0dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:background="#2550BE"
+        android:gravity="center"
+        android:textColor="#FBFBFB"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/emailadresi"
+        android:layout_width="0dp"
+        android:layout_height="29dp"
+        android:background="#2550BE"
+        android:gravity="center"
+        android:textColor="#FBFBFB"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/telno" />
+
+    <TextView
+        android:id="@+id/telno"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:background="#2550BE"
+        android:gravity="center"
+        android:textColor="#FBFBFB"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciAdii" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="48dp"
+        android:onClick="arabaCagirGecis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/ic_baseline_directions_car_24" />
+
+    <ImageView
+        android:id="@+id/turlar_gorsel"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:onClick="turlarGecis"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/ic_baseline_hotel_class_24" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="yardimGecis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/ic_baseline_help_center_24" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="65dp"
+        android:layout_height="82dp"
+        android:onClick="CikisYap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7"
+        app:srcCompat="@drawable/ic_baseline_power_settings_new_24" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mevcut_cagri"
+        app:srcCompat="@drawable/anasayfagorsel1" />
+
+    <TextView
+        android:id="@+id/mevcut_cagri"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Mevcut araç çağrınız bulunmamaktadır"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailadresi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

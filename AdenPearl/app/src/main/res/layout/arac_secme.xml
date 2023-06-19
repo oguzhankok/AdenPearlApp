@@ -1,0 +1,1064 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="677dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dp"
+                android:layout_height="84dp"
+                android:background="#2550BE"
+                android:gravity="center"
+                android:text="Size Uygun Araçlarımız..."
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/tic1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aracmarka"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic2"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="156dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aracmarka"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic3"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic1"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic4"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="156dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic2"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic5"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic3"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <TextView
+                android:id="@+id/aracmarka"
+                android:layout_width="257dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:text="Mercedes Benz VITO Vip"
+                android:textAlignment="center"
+                android:textColor="#AE1C1C"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/arac1" />
+
+
+            <ImageView
+                android:id="@+id/arac1"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                app:srcCompat="@drawable/adenpearl66" />
+
+            <ImageView
+                android:id="@+id/arac2"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cagir1"
+                app:srcCompat="@drawable/adenpearl1616" />
+
+            <TextView
+                android:id="@+id/ozellik1"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:text="Şarj Cihazı"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic1"
+                app:layout_constraintTop_toBottomOf="@+id/aracmarka" />
+
+            <TextView
+                android:id="@+id/ozellik4"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="36dp"
+                android:text="Güvenli"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik2" />
+
+            <TextView
+                android:id="@+id/kisisayisi1"
+                android:layout_width="23dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:text="6"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/kisiresmi1"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4" />
+
+            <TextView
+                android:id="@+id/valizsayisi1"
+                android:layout_width="23dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:text="6"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/valizresmi1"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4" />
+
+            <TextView
+                android:id="@+id/ozellik5"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:text="VIP"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic5"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik3" />
+
+            <TextView
+                android:id="@+id/ozellik3"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:text="Kaliteli"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic3"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik1" />
+
+            <TextView
+                android:id="@+id/ozellik2"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="36dp"
+                android:text="Komforlu"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aracmarka" />
+
+            <ImageView
+                android:id="@+id/kisiresmi1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toEndOf="@+id/ozellik5"
+                app:layout_constraintTop_toBottomOf="@+id/tic4"
+                app:srcCompat="@drawable/ic_baseline_person_24" />
+
+            <ImageView
+                android:id="@+id/valizresmi1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toEndOf="@+id/kisisayisi1"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4"
+                app:srcCompat="@drawable/suitcase" />
+
+            <Button
+                android:id="@+id/cagir1"
+                android:layout_width="338dp"
+                android:layout_height="87dp"
+                android:layout_marginTop="64dp"
+                android:backgroundTint="#2550BE"
+                android:onClick="aracSecildi_vito"
+                android:text="Araç Seç"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kisiresmi1" />
+
+            <TextView
+                android:id="@+id/fiyat1"
+                android:layout_width="162dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="20dp"
+                android:text="-----"
+                android:textAlignment="center"
+                android:textColor="#850F0F"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kisiresmi1" />
+
+            <TextView
+                android:id="@+id/aracmarka2"
+                android:layout_width="257dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:text="Mercedes Benz SPRINTER Vip"
+                android:textAlignment="center"
+                android:textColor="#AE1C1C"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/arac2" />
+
+            <ImageView
+                android:id="@+id/tic2_1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aracmarka2"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <TextView
+                android:id="@+id/ozellik2_1"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:text="Şarj Cihazı"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic2_1"
+                app:layout_constraintTop_toBottomOf="@+id/aracmarka2" />
+
+            <ImageView
+                android:id="@+id/tic2_2"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="156dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aracmarka2"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic2_3"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic2_1"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic2_4"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="156dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic2_2"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic2_5"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic2_3"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+
+            <TextView
+                android:id="@+id/ozellik2_4"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="36dp"
+                android:text="Güvenli"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik2_2" />
+
+            <TextView
+                android:id="@+id/ozellik2_5"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:text="VIP"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic2_5"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik2_3" />
+
+            <TextView
+                android:id="@+id/ozellik2_3"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:text="Kaliteli"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic2_3"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik2_1" />
+
+            <TextView
+                android:id="@+id/ozellik2_2"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="36dp"
+                android:text="Komforlu"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aracmarka2" />
+
+            <TextView
+                android:id="@+id/kisisayisi2_1"
+                android:layout_width="23dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:text="16"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/kisiresmi2_1"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik2_4" />
+
+            <TextView
+                android:id="@+id/valizsayisi2_1"
+                android:layout_width="23dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:text="16"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/valizresmi2_1"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik2_4" />
+
+            <ImageView
+                android:id="@+id/kisiresmi2_1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toEndOf="@+id/ozellik2_5"
+                app:layout_constraintTop_toBottomOf="@+id/tic2_4"
+                app:srcCompat="@drawable/ic_baseline_person_24" />
+
+            <ImageView
+                android:id="@+id/valizresmi2_1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toEndOf="@+id/kisisayisi2_1"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik2_4"
+                app:srcCompat="@drawable/suitcase" />
+
+            <Button
+                android:id="@+id/cagir2_1"
+                android:layout_width="338dp"
+                android:layout_height="87dp"
+                android:layout_marginTop="64dp"
+                android:backgroundTint="#2550BE"
+                android:onClick="aracSecildi_sprinter"
+                android:text="Araç Seç"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kisiresmi2_1" />
+
+            <TextView
+                android:id="@+id/fiyat2_1"
+                android:layout_width="162dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="20dp"
+                android:text="-----"
+                android:textAlignment="center"
+                android:textColor="#850F0F"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kisiresmi2_1" />
+
+
+            <ImageView
+                android:id="@+id/arac3"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cagir2_1"
+                app:srcCompat="@drawable/adenpearlkucukarac22" />
+
+            <TextView
+                android:id="@+id/aracmarka3_2"
+                android:layout_width="257dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:text="Mercedes Benz MAISTO Vip"
+                android:textAlignment="center"
+                android:textColor="#AE1C1C"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/arac3" />
+
+            <ImageView
+                android:id="@+id/tic3_1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aracmarka3_2"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <TextView
+                android:id="@+id/ozellik3_1"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:text="Şarj Cihazı"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic3_1"
+                app:layout_constraintTop_toBottomOf="@+id/aracmarka3_2" />
+
+            <ImageView
+                android:id="@+id/tic3_2"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="156dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aracmarka3_2"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic3_3"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic3_1"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic3_4"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="156dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic3_2"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic3_5"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic3_3"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+
+            <TextView
+                android:id="@+id/ozellik3_4"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="36dp"
+                android:text="Güvenli"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik3_2" />
+
+            <TextView
+                android:id="@+id/ozellik3_5"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:text="VIP"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic3_5"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik3_3" />
+
+            <TextView
+                android:id="@+id/ozellik3_3"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:text="Kaliteli"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic3_3"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik3_1" />
+
+            <TextView
+                android:id="@+id/ozellik3_2"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="36dp"
+                android:text="Komforlu"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aracmarka3_2" />
+
+            <TextView
+                android:id="@+id/kisisayisi3_1"
+                android:layout_width="23dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:text="2"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/kisiresmi3_1"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik3_4" />
+
+            <TextView
+                android:id="@+id/valizsayisi3_1"
+                android:layout_width="23dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:text="2"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/valizresmi3_1"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik3_4" />
+
+            <ImageView
+                android:id="@+id/kisiresmi3_1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toEndOf="@+id/ozellik3_5"
+                app:layout_constraintTop_toBottomOf="@+id/tic3_4"
+                app:srcCompat="@drawable/ic_baseline_person_24" />
+
+            <ImageView
+                android:id="@+id/valizresmi3_1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toEndOf="@+id/kisisayisi3_1"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik3_4"
+                app:srcCompat="@drawable/suitcase" />
+
+            <Button
+                android:id="@+id/cagir3_1"
+                android:layout_width="338dp"
+                android:layout_height="87dp"
+                android:layout_marginTop="64dp"
+                android:backgroundTint="#2550BE"
+                android:onClick="aracSecildi_maisto"
+                android:text="Araç Seç"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kisiresmi3_1" />
+
+            <TextView
+                android:id="@+id/fiyat3_1"
+                android:layout_width="162dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="20dp"
+                android:text="-----"
+                android:textAlignment="center"
+                android:textColor="#850F0F"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kisiresmi3_1" />
+
+
+            <Button
+                android:id="@+id/cagir4_1"
+                android:layout_width="338dp"
+                android:layout_height="87dp"
+                android:layout_marginTop="64dp"
+                android:backgroundTint="#2550BE"
+                android:onClick="aracSecildi_vip"
+                android:text="Araç Seç"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kisiresmi4_1" />
+
+            <TextView
+                android:id="@+id/fiyat4_1"
+                android:layout_width="162dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="20dp"
+                android:text="-----"
+                android:textAlignment="center"
+                android:textColor="#850F0F"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kisiresmi4_1" />
+
+            <TextView
+                android:id="@+id/kisisayisi4_1"
+                android:layout_width="23dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:text="4"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/kisiresmi4_1"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4_6" />
+
+            <TextView
+                android:id="@+id/valizsayisi4_1"
+                android:layout_width="23dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:text="4"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/valizresmi4_1"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4_6" />
+
+            <ImageView
+                android:id="@+id/valizresmi4_1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toEndOf="@+id/kisisayisi4_1"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4_6"
+                app:srcCompat="@drawable/suitcase" />
+
+            <ImageView
+                android:id="@+id/kisiresmi4_1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toEndOf="@+id/ozellik4_10"
+                app:layout_constraintTop_toBottomOf="@+id/tic4_13"
+                app:srcCompat="@drawable/ic_baseline_person_24" />
+
+            <ImageView
+                android:id="@+id/arac4"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cagir3_1"
+                app:srcCompat="@drawable/adenpearl44" />
+
+            <TextView
+                android:id="@+id/aracmarka4_2"
+                android:layout_width="257dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:text="Mercedes Benz MAISTO Vip"
+                android:textAlignment="center"
+                android:textColor="#AE1C1C"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/arac4" />
+
+            <ImageView
+                android:id="@+id/tic4_1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aracmarka4_2"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <TextView
+                android:id="@+id/ozellik4_1"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:text="Şarj Cihazı"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic4_1"
+                app:layout_constraintTop_toBottomOf="@+id/aracmarka4_2" />
+
+            <TextView
+                android:id="@+id/ozellik4_6"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:text="Alkol (Extra)"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic4_6"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4_13" />
+
+            <TextView
+                android:id="@+id/ozellik4_7"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="8dp"
+                android:text="Bluetooth"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic4_7"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4_5" />
+
+            <TextView
+                android:id="@+id/ozellik4_8"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:text="Perde"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic4_8"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4_7" />
+
+            <TextView
+                android:id="@+id/ozellik4_9"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:text="Lüks"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic4_9"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4_8" />
+
+            <TextView
+                android:id="@+id/ozellik4_10"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:text="Buzdolabı"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic4_10"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4_9" />
+
+            <TextView
+                android:id="@+id/ozellik4_11"
+                android:layout_width="141dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:text="Alkolsüz İçecek"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic4_11"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4_4" />
+
+            <TextView
+                android:id="@+id/ozellik4_12"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:text="Televizyon"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic4_12"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4_11" />
+
+            <TextView
+                android:id="@+id/ozellik4_13"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:text="Wi-Fi"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic4_13"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4_12" />
+
+            <ImageView
+                android:id="@+id/tic4_2"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="156dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aracmarka4_2"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic4_3"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic4_1"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+
+            <ImageView
+                android:id="@+id/tic4_4"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="156dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic4_2"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic4_6"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="156dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic4_4"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic4_11"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="156dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic4_6"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic4_12"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="156dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic4_11"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic4_13"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="156dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic4_12"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic4_5"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic4_3"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic4_7"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic4_5"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic4_8"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic4_7"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic4_9"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic4_8"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+            <ImageView
+                android:id="@+id/tic4_10"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tic4_9"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+
+            <TextView
+                android:id="@+id/ozellik4_4"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="36dp"
+                android:text="Güvenli"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4_2" />
+
+            <TextView
+                android:id="@+id/ozellik4_5"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:text="VIP"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic4_5"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4_3" />
+
+            <TextView
+                android:id="@+id/ozellik4_3"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:text="Kaliteli"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/tic4_3"
+                app:layout_constraintTop_toBottomOf="@+id/ozellik4_1" />
+
+            <TextView
+                android:id="@+id/ozellik4_2"
+                android:layout_width="119dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="36dp"
+                android:text="Komforlu"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aracmarka4_2" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="80dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="8dp"
+                android:onClick="geriDon"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

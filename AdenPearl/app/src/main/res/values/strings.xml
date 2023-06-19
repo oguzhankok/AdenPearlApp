@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AdenPearl</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="permission_phone">Telefon durumu için izin gerekiyor.</string>
+</resources>

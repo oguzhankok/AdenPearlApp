@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="677dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="575dp"
+                android:layout_marginBottom="210dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.009" />
+
+            <TextView
+                android:id="@+id/fiyatBelirtec"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="FİYAT : "
+                android:textAlignment="center"
+                android:textColor="#6A1010"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mapView" />
+
+            <TextView
+                android:id="@+id/fiyatTxt"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="30dp"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fiyatBelirtec"
+                app:layout_constraintTop_toBottomOf="@+id/mapView" />
+
+
+            <TextView
+                android:id="@+id/tarihTxt"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="30dp"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/tarihBelirtec"
+                app:layout_constraintTop_toBottomOf="@+id/fiyatTxt" />
+
+            <TextView
+                android:id="@+id/saatTxt"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="30dp"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/saatBelirtec"
+                app:layout_constraintTop_toBottomOf="@+id/tarihTxt" />
+
+            <TextView
+                android:id="@+id/lokasyonBelirtec"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="30dp"
+                android:text="LOKASYON"
+                android:textAlignment="center"
+                android:textColor="#6A1010"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/fiyatTxt"
+                app:layout_constraintTop_toBottomOf="@+id/mapView" />
+
+            <TextView
+                android:id="@+id/hedefBelirtec"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:text="HEDEF"
+                android:textAlignment="center"
+                android:textColor="#6A1010"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/saatTxt"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+            <TextView
+                android:id="@+id/saatBelirtec"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="SAAT : "
+                android:textAlignment="center"
+                android:textColor="#6A1010"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tarihBelirtec" />
+
+            <TextView
+                android:id="@+id/tarihBelirtec"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="TARİH : "
+                android:textAlignment="center"
+                android:textColor="#6A1010"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fiyatBelirtec" />
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tarihTxt"
+                app:layout_constraintTop_toBottomOf="@+id/lokasyonBelirtec">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lokasyonTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/onaylaBut"
+                android:layout_width="180dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2550BE"
+                android:onClick="arac_onaylandi"
+                android:text="ONAYLA"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+            <Button
+                android:id="@+id/iptalBut2"
+                android:layout_width="180dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#710B2E"
+                android:onClick="arac_iptal_edildi"
+                android:text="İPTAL"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+            <ScrollView
+                android:id="@+id/scrollView3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/saatTxt"
+                app:layout_constraintTop_toBottomOf="@+id/hedefBelirtec">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/hedefTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginEnd="4dp"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Turlar">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="677dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Turlar">
+
+            <TextView
+                android:id="@+id/bolge_belirtec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Bölge : "
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tur_gorsel" />
+
+            <TextView
+                android:id="@+id/yemek_belirtec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Yemek : "
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bolge_belirtec" />
+
+            <TextView
+                android:id="@+id/kategori_belirtec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Kategori : "
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/yemek_belirtec" />
+
+            <TextView
+                android:id="@+id/tarih_belirtec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Tarih : "
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kategori_belirtec" />
+
+            <ImageView
+                android:id="@+id/tur_gorsel"
+                android:layout_width="match_parent"
+                android:layout_height="262dp"
+                android:layout_marginTop="3dp"
+                app:layout_constraintEnd_toEndOf="@id/textView10"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                app:srcCompat="@drawable/adrasaniki" />
+
+            <TextView
+                android:id="@+id/bolge_detay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bolge_belirtec"
+                app:layout_constraintTop_toBottomOf="@+id/tur_gorsel" />
+
+            <TextView
+                android:id="@+id/yemek_detay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/yemek_belirtec"
+                app:layout_constraintTop_toBottomOf="@+id/bolge_detay" />
+
+            <TextView
+                android:id="@+id/kategori_detay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/kategori_belirtec"
+                app:layout_constraintTop_toBottomOf="@+id/yemek_detay" />
+
+            <TextView
+                android:id="@+id/tarih_detay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tarih_belirtec"
+                app:layout_constraintTop_toBottomOf="@+id/kategori_detay" />
+
+            <TextView
+                android:id="@+id/zaman_detay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/zaman_vector"
+                app:layout_constraintTop_toBottomOf="@+id/tarih_belirtec" />
+
+            <TextView
+                android:id="@+id/oto_detay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="12dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/oto_vektor"
+                app:layout_constraintTop_toBottomOf="@+id/zaman_detay" />
+
+            <ImageView
+                android:id="@+id/zaman_vector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tarih_belirtec"
+                app:srcCompat="@drawable/ic_baseline_access_time_24" />
+
+            <ImageView
+                android:id="@+id/oto_vektor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/zaman_vector"
+                app:srcCompat="@drawable/ic_baseline_directions_bus_24" />
+
+            <TextView
+                android:id="@+id/tur_fiyat"
+                android:layout_width="138dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="22dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#772525"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.741"
+                app:layout_constraintStart_toEndOf="@+id/zaman_detay"
+                app:layout_constraintTop_toBottomOf="@+id/tarih_detay" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dp"
+                android:layout_height="84dp"
+                android:background="#2550BE"
+                android:gravity="center"
+                android:text="Turlar"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/turBirIncele"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="75dp"
+                android:backgroundTint="#2550BE"
+                android:onClick="turBirIncele"
+                android:text="İncele"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tur_fiyat" />
+
+
+            <TextView
+                android:id="@+id/bolge_belirtec2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Bölge : "
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tur_gorsel2" />
+
+            <TextView
+                android:id="@+id/yemek_belirtec2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Yemek : "
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bolge_belirtec2" />
+
+            <TextView
+                android:id="@+id/kategori_belirtec2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Kategori : "
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/yemek_belirtec2" />
+
+            <TextView
+                android:id="@+id/tarih_belirtec2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Tarih : "
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kategori_belirtec2" />
+
+            <ImageView
+                android:id="@+id/tur_gorsel2"
+                android:layout_width="match_parent"
+                android:layout_height="262dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/turBirIncele"
+                app:srcCompat="@drawable/batikaradenizturu" />
+
+            <TextView
+                android:id="@+id/bolge_detay2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bolge_belirtec2"
+                app:layout_constraintTop_toBottomOf="@+id/tur_gorsel2" />
+
+            <TextView
+                android:id="@+id/yemek_detay2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/yemek_belirtec2"
+                app:layout_constraintTop_toBottomOf="@+id/bolge_detay2" />
+
+            <TextView
+                android:id="@+id/kategori_detay2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/kategori_belirtec2"
+                app:layout_constraintTop_toBottomOf="@+id/yemek_detay2" />
+
+            <TextView
+                android:id="@+id/tarih_detay2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tarih_belirtec2"
+                app:layout_constraintTop_toBottomOf="@+id/kategori_detay2" />
+
+            <TextView
+                android:id="@+id/zaman_detay2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/zaman_vector2"
+                app:layout_constraintTop_toBottomOf="@+id/tarih_belirtec2" />
+
+            <TextView
+                android:id="@+id/oto_detay2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="12dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/oto_vektor2"
+                app:layout_constraintTop_toBottomOf="@+id/zaman_detay2" />
+
+            <ImageView
+                android:id="@+id/zaman_vector2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tarih_belirtec2"
+                app:srcCompat="@drawable/ic_baseline_access_time_24" />
+
+            <ImageView
+                android:id="@+id/oto_vektor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/zaman_vector2"
+                app:srcCompat="@drawable/ic_baseline_directions_bus_24" />
+
+            <TextView
+                android:id="@+id/tur_fiyat2"
+                android:layout_width="138dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="22dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#772525"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.741"
+                app:layout_constraintStart_toEndOf="@+id/zaman_detay2"
+                app:layout_constraintTop_toBottomOf="@+id/tarih_detay2" />
+
+            <Button
+                android:id="@+id/turIkiIncele"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="75dp"
+                android:backgroundTint="#2550BE"
+                android:onClick="turIkiIncele"
+                android:text="İncele"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tur_fiyat2" />
+
+
+            <TextView
+                android:id="@+id/bolge_belirtec3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Bölge : "
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tur_gorsel3" />
+
+            <TextView
+                android:id="@+id/yemek_belirtec3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Yemek : "
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bolge_belirtec3" />
+
+            <TextView
+                android:id="@+id/kategori_belirtec3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Kategori : "
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/yemek_belirtec3" />
+
+            <TextView
+                android:id="@+id/tarih_belirtec3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Tarih : "
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kategori_belirtec3" />
+
+            <ImageView
+                android:id="@+id/tur_gorsel3"
+                android:layout_width="match_parent"
+                android:layout_height="262dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/turIkiIncele"
+                app:srcCompat="@drawable/pamukkale" />
+
+            <TextView
+                android:id="@+id/bolge_detay3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bolge_belirtec3"
+                app:layout_constraintTop_toBottomOf="@+id/tur_gorsel3" />
+
+            <TextView
+                android:id="@+id/yemek_detay3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/yemek_belirtec3"
+                app:layout_constraintTop_toBottomOf="@+id/bolge_detay3" />
+
+            <TextView
+                android:id="@+id/kategori_detay3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/kategori_belirtec3"
+                app:layout_constraintTop_toBottomOf="@+id/yemek_detay3" />
+
+            <TextView
+                android:id="@+id/tarih_detay3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tarih_belirtec3"
+                app:layout_constraintTop_toBottomOf="@+id/kategori_detay3" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="80dp"
+                android:layout_height="84dp"
+                android:onClick="geriDon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:id="@+id/zaman_detay3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/zaman_vector3"
+                app:layout_constraintTop_toBottomOf="@+id/tarih_belirtec3" />
+
+            <TextView
+                android:id="@+id/oto_detay3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="12dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/oto_vektor3"
+                app:layout_constraintTop_toBottomOf="@+id/zaman_detay3" />
+
+            <ImageView
+                android:id="@+id/zaman_vector3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tarih_belirtec3"
+                app:srcCompat="@drawable/ic_baseline_access_time_24" />
+
+            <ImageView
+                android:id="@+id/oto_vektor3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/zaman_vector3"
+                app:srcCompat="@drawable/ic_baseline_directions_bus_24" />
+
+            <TextView
+                android:id="@+id/tur_fiyat3"
+                android:layout_width="138dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="22dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#772525"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.741"
+                app:layout_constraintStart_toEndOf="@+id/zaman_detay3"
+                app:layout_constraintTop_toBottomOf="@+id/tarih_detay3" />
+
+            <Button
+                android:id="@+id/turUcIncele"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="75dp"
+                android:backgroundTint="#2550BE"
+                android:onClick="turUcIncele"
+                android:text="İncele"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tur_fiyat3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

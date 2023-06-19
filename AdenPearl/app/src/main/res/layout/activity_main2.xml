@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/hosgeldin2"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:background="#2550BE"
+        android:fontFamily="@font/literata"
+        android:gravity="center"
+        android:text="Uygulamamıza kayıt olarak üyelere özel ayrıcalıklardan yararlanabilirsiniz"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hosgeldin" />
+
+    <TextView
+        android:id="@+id/hosgeldin3"
+        android:layout_width="299dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/literata"
+        android:text="Zaten hesabınız var mı?"
+        android:textAlignment="textStart"
+
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/KaydolButon2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/hosgeldin"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:background="#2550BE"
+        android:fontFamily="@font/literata_bold"
+        android:text="Kayıt ol"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eMailtext" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:ems="10"
+        android:hint="Telefon (+90)"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/KaydolButon2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <Button
+        android:id="@+id/KaydolButon2"
+        android:layout_width="393dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="90dp"
+        android:backgroundTint="#150F0F"
+        android:onClick="KayitOl"
+        android:text="Kaydol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <Button
+        android:id="@+id/Girisyap2"
+        android:layout_width="298dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#2550BE"
+        android:onClick="GirisEkraniGecis"
+        android:text="Giriş"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/eMailtext"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hosgeldin2" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/eMailtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hosgeldin2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/kayitgorselguncel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

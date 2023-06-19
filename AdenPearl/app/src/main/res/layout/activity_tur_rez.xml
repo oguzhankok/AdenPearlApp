@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TurRez">
+
+    <Spinner
+        android:id="@+id/kisiSayisi2"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kisi_sayisi_belirtec" />
+
+    <TextView
+        android:id="@+id/kisi_sayisi_belirtec"
+        android:layout_width="62dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Kişi : "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rez_isim" />
+
+    <TextView
+        android:id="@+id/kisiSayisitxt"
+        android:layout_width="62dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/kisi_sayisi_belirtec"
+        app:layout_constraintTop_toBottomOf="@+id/rez_isim" />
+
+    <TextView
+        android:id="@+id/tepe_text"
+        android:layout_width="0dp"
+        android:layout_height="84dp"
+        android:background="#2550BE"
+        android:gravity="center"
+        android:text="Detaylar"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/geri"
+        android:layout_width="80dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="5dp"
+        android:onClick="geriDon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <EditText
+        android:id="@+id/rez_isim"
+        android:layout_width="356dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Rezervasyon için isim-soyisim giriniz : "
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tepe_text" />
+
+    <TextView
+        android:id="@+id/bilgilendirmeBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text=" Bilgilendirme "
+        android:textColor="#731111"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kisiSayisi2" />
+
+    <TextView
+        android:id="@+id/bilgilendirmeBaslik2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Fiyat"
+        android:textColor="#731111"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilgilendirmeYazisi" />
+
+    <TextView
+        android:id="@+id/bilgilendirmeYazisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilgilendirmeBaslik" />
+
+    <TextView
+        android:id="@+id/fiyatYazisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="------"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilgilendirmeBaslik2" />
+
+    <Button
+        android:id="@+id/sonRezbut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="75dp"
+        android:backgroundTint="#2550BE"
+        android:onClick="tur_rez_alindi"
+        android:text="Rezervasyon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fiyatYazisi" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
